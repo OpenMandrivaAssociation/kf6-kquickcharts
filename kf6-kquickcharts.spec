@@ -1,10 +1,10 @@
 %define devname %mklibname KF6QuickCharts -d
-%define git 20230412
+%define git 20230420
 
 Name: kf6-kquickcharts
 Version: 5.240.0
 Release: %{?git:0.%{git}.}1
-Source0: https://invent.kde.org/frameworks/kquickcharts/-/archive/master/kquickcharts-master.tar.bz2
+Source0: https://invent.kde.org/frameworks/kquickcharts/-/archive/master/kquickcharts-master.tar.bz2#/kquickcharts-%{git}.tar.bz2
 Summary: QtQuick plugin providing high-performance charts
 URL: https://invent.kde.org/frameworks/kquickcharts
 License: CC0-1.0 LGPL-2.0+ LGPL-2.1 LGPL-3.0
