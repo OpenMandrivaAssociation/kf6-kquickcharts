@@ -26,6 +26,8 @@ BuildRequires: cmake(Qt6QuickControls2)
 BuildRequires: cmake(Qt6ShaderTools)
 BuildRequires: cmake(Qt6ShaderToolsTools)
 BuildRequires: cmake(Qt6QuickTest)
+BuildRequires: cmake(Qt6Network)
+BuildRequires: cmake(Qt6Qml)
 BuildRequires: doxygen
 BuildRequires: cmake(Qt6ToolsTools)
 BuildRequires: cmake(Qt6)
