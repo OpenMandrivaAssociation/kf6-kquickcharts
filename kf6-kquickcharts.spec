@@ -1,5 +1,5 @@
 %define devname %mklibname KF6QuickCharts -d
-%define git 20230513
+%define git 20230525
 
 Name: kf6-kquickcharts
 Version: 5.240.0
@@ -17,7 +17,7 @@ BuildRequires: cmake(Qt6Core)
 BuildRequires: cmake(Qt6QmlTools)
 BuildRequires: cmake(Qt6Qml)
 BuildRequires: cmake(EGL)
-BuildRequires: cmake(XKB)
+BuildRequires: pkgconfig(xkbcommon)
 BuildRequires: cmake(Qt6GuiTools)
 BuildRequires: cmake(Qt6DBusTools)
 BuildRequires: cmake(VulkanHeaders)
