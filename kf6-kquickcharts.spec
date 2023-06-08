@@ -1,5 +1,5 @@
 %define devname %mklibname KF6QuickCharts -d
-%define git 20230606
+%define git 20230608
 
 Name: kf6-kquickcharts
 Version: 5.240.0
