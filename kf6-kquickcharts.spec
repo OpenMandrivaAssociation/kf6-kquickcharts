@@ -1,5 +1,5 @@
 %define devname %mklibname KF6QuickCharts -d
-%define git 20231022
+%define git 20231103
 
 Name: kf6-kquickcharts
 Version: 5.240.0
@@ -62,6 +62,8 @@ QtQuick plugin providing high-performance charts
 %files
 %{_libdir}/qt6/qml/org/kde/quickcharts
 %{_datadir}/qlogging-categories6/*
+%{_libdir}/libQuickCharts.so
+%{_libdir}/libQuickChartsControls.so
 
 %files -n %{devname}
 %{_libdir}/cmake/KF6QuickCharts
