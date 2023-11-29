@@ -3,7 +3,7 @@
 #define git 20231103
 
 Name: kf6-kquickcharts
-Version: 5.245.0
+Version: 5.246.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kquickcharts/-/archive/master/kquickcharts-master.tar.bz2#/kquickcharts-%{git}.tar.bz2
@@ -67,8 +67,8 @@ QtQuick plugin providing high-performance charts
 %files
 %{_libdir}/qt6/qml/org/kde/quickcharts
 %{_datadir}/qlogging-categories6/*
-%{_libdir}/libQuickCharts.so
-%{_libdir}/libQuickChartsControls.so
+%{_libdir}/libQuickCharts.so*
+%{_libdir}/libQuickChartsControls.so*
 
 %files -n %{devname}
 %{_libdir}/cmake/KF6QuickCharts
