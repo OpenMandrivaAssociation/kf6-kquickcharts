@@ -1,14 +1,15 @@
 %define devname %mklibname KF6QuickCharts -d
 %define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
+%define major %(echo %{version} |cut -d. -f1-2)
 #define git 20240217
 
 Name: kf6-kquickcharts
-Version: 6.0.0
-Release: %{?git:0.%{git}.}2
+Version: 6.1.0
+Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kquickcharts/-/archive/master/kquickcharts-master.tar.bz2#/kquickcharts-%{git}.tar.bz2
 %else
-Source0: http://download.kde.org/%{stable}/frameworks/%{version}/kquickcharts-%{version}.tar.xz
+Source0: http://download.kde.org/%{stable}/frameworks/%{major}/kquickcharts-%{version}.tar.xz
 %endif
 Summary: QtQuick plugin providing high-performance charts
 URL: https://invent.kde.org/frameworks/kquickcharts
