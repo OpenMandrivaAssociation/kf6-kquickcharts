@@ -4,7 +4,7 @@
 #define git 20240217
 
 Name: kf6-kquickcharts
-Version: 6.19.0
+Version: 6.20.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/kquickcharts/-/archive/master/kquickcharts-master.tar.bz2#/kquickcharts-%{git}.tar.bz2
